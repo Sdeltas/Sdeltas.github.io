@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Emoji Mood Tracker</title>
+</head>
+<body>
+    <h2>🌈 Emoji Mood Tracker</h2>
+    <div id="s">
+        <button onclick="m=1">😢</button>
+        <button onclick="m=2">😔</button>
+        <button onclick="m=3">😐</button>
+        <button onclick="m=4">🙂</button>
+        <button onclick="m=5">😊</button>
+        <button onclick="m=6">😄</button>
+        <button onclick="m=7">🤩</button>
+    </div>
+    <input id="n" placeholder="Note (optional)">
+    <button onclick="l()">Log Mood</button>
+    <div id="d"></div>
+
+    <script>
+        let h=[],m=0;l=()=>{if(!m)return;h.push({l:m,e:["","😢","😔","😐","🙂","😊","😄","🤩"][m],n:n.value,t:new Date().toLocaleTimeString()});d.innerHTML=h.map(x=>`<p>${x.e} ${"█".repeat(x.l)} ${x.n}</p>`).join('')+(m<=2?'<p>Tip: Take deep breaths 🌬️</p>':'');n.value='';m=0}
+        window.onload=()=>{h=[{l:5,e:"😊",n:"Great coffee!",t:"09:15"},{l:3,e:"😐",n:"Regular day",t:"14:30"}];l()}
+    </script>
+</body>
+</html>
