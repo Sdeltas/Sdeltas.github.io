@@ -1,0 +1,76 @@
+:root {
+  --primary: #12018E;
+  --secondary: #541A1A;
+  --dark: #1A1919;
+  --light: #AE8888;
+  --accent: #7ac7d6;
+}
+
+body {
+  background-color: var(--light);
+  color: var(--dark);
+  transition: background-color 0.3s, color 0.3s;
+  line-height: 1.6;
+}
+
+body.dark {
+  background-color: var(--dark);
+  color: #f0f0f0;
+}
+
+.hero {
+  background: linear-gradient(135deg, rgba(18, 1, 142, 0.1) 0%, rgba(84, 26, 26, 0.1) 100%);
+  margin: 1rem 0;
+}
+
+.hero h1 {
+  color: var(--primary);
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card.dark {
+  background: rgba(40, 40, 40, 0.8);
+  color: #f0f0f0;
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+.lead {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.btn-primary {
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.border-primary {
+  border-color: var(--primary) !important;
+}
+
+.card-title {
+  color: var(--primary);
+}
