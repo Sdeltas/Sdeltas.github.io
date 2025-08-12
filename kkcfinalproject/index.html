@@ -1,1 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sdeltas Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: var(--primary);">
+    <div class="container">
+      <a class="navbar-brand" href="#" style="color: var(--accent);">Sdeltas</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="showPage('home')">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="showPage('mission')">Mission</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="showPage('about')">About Me</a>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-outline-light rounded-circle ms-3" id="themeToggle" style="width: 40px; height: 40px;">◐</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="home" class="page active">
+    <div class="container py-5">
+      <div class="hero text-center p-4 rounded">
+        <h1 class="display-4">Welcome to Sdeltas Admin</h1>
+        <img src="public/logo.png" alt="Admin Icon" class="admin-icon my-3" style="max-width: 150px;">
+        <p class="lead">Administering secure, accessible digital experiences with AI</p>
+        <button class="btn btn-primary btn-lg mt-3" onclick="showPage('mission')">Our Mission</button>
+      </div>
+
+      <div class="row g-4 py-5">
+        <div class="col-md-4">
+          <div class="feature card h-100 shadow-sm">
+            <div class="card-body text-center">
+              <h3 class="card-title">Secure Administration</h3>
+              <p class="card-text">Robust security protocols to protect user data</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature card h-100 shadow-sm">
+            <div class="card-body text-center">
+              <h3 class="card-title">AI Integration</h3>
+              <p class="card-text">Leveraging AI to automate and optimize processes</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature card h-100 shadow-sm">
+            <div class="card-body text-center">
+              <h3 class="card-title">User Focused</h3>
+              <p class="card-text">Ensuring accessibility and usability for all</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="mission" class="page">
+    <div class="container py-5">
+      <h1 class="text-center mb-4">Our Mission</h1>
+      <div class="mission-content card">
+        <div class="card-body">
+          <p class="lead text-center">Our Mission Is to Help others with their movement through The Internet, By using Safe and accessible AI.</p>
+
+          <div class="row g-4 mt-4">
+            <div class="col-md-6">
+              <div class="point card h-100 border-start border-4 border-primary">
+                <div class="card-body">
+                  <h3 class="card-title">AI-Powered Experience</h3>
+                  <p class="card-text">Using This AI, That will make the experiences Seamlessly Easier to use and access.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="point card h-100 border-start border-4 border-primary">
+                <div class="card-body">
+                  <h3 class="card-title">Data Protection</h3>
+                  <p class="card-text">While Securing all of the data of the users making sure their privacy is Safe from outside threats.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="about" class="page">
+    <div class="container py-5">
+      <h1 class="text-center mb-4">About Me</h1>
+      <div class="mission-content card">
+        <div class="card-body">
+          <p class="lead text-center">Hi, I'm Aboubacar, a tech innovator on a mission to make the internet safer and more accessible through code. My coding journey began with a passion for solving real-world problems, leading me to develop AI-driven solutions that streamline online experiences while prioritizing user privacy.</p>
+          
+          <div class="row g-4 mt-4">
+            <div class="col-md-4">
+              <div class="point card h-100 border-start border-4 border-primary">
+                <div class="card-body">
+                  <h3 class="card-title">Professional Background</h3>
+                  <p class="card-text">Specializing in digital administration with a focus on AI integration and user security. Experienced in creating accessible digital environments for diverse user groups.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="point card h-100 border-start border-4 border-primary">
+                <div class="card-body">
+                  <h3 class="card-title">Skills & Expertise</h3>
+                  <p class="card-text">AI Implementation, Cybersecurity, User Experience Design, Digital Accessibility, Process Automation, and Data Protection Compliance.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="point card h-100 border-start border-4 border-primary">
+                <div class="card-body">
+                  <h3 class="card-title">Personal Approach</h3>
+                  <p class="card-text">Committed to making technology work for everyone. I believe in building solutions that are not only powerful but also intuitive, secure, and inclusive for all users.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="text-center mt-4">
+            <button class="btn btn-primary" onclick="showPage('home')">Return to Home</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white text-center py-4 mt-5">
+    <div class="container">
+      <p>&copy; 2025 Sdeltas Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
