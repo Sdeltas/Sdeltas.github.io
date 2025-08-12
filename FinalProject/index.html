@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sdeltas Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav>
+    <a href="#" class="brand">Sdeltas </a>
+    <div class="nav-links">
+      <a href="#" onclick="showPage('home')">Home</a>
+      <a href="#" onclick="showPage('mission')">Mission</a>
+      <button class="theme-toggle" id="themeToggle">◐</button>
+    </div>
+  </nav>
+
+  <div id="home" class="page active">
+    <div class="hero">
+      <h1>Welcome to Sdeltas Admin</h1>
+      <Img src="public/logo.png" alt="Admin Icon" class="admin-icon">
+      <p>Administering secure, accessible digital experiences with AI</p>
+      <button onclick="showPage('mission')">Our Mission</button>
+    </div>
+
+    <div class="features">
+      <div class="feature">
+        <h3>Secure Administration</h3>
+        <p>Robust security protocols to protect user data</p>
+      </div>
+      <div class="feature">
+        <h3>AI Integration</h3>
+        <p>Leveraging AI to automate and optimize processes</p>
+      </div>
+      <div class="feature">
+        <h3>User Focused</h3>
+        <p>Ensuring accessibility and usability for all</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="mission" class="page">
+    <h1>Our Mission</h1>
+    <div class="mission-content">
+      <p class="lead">Our Mission Is to Help others with their movement through The Internet, By using Safe and
+        accessible AI.</p>
+
+      <div class="mission-points">
+        <div class="point">
+          <h3>AI-Powered Experience</h3>
+          <p>Using This AI, That will make the experiences Seamlessly Easier to use and access.</p>
+        </div>
+        <div class="point">
+          <h3>Data Protection</h3>
+          <p>While Securing all of the data of the users making sure their privacy is Safe from outside threats.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Sdeltas Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
